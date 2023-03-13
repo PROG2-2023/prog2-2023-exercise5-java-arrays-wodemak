@@ -34,6 +34,7 @@ public class FlightBooking {
     private TripType tripType;
     private int passengerAge;
     private String passengerGender;
+    private int size;
     private String [] fullName;
     private String [] gender;
     private int [] age;
@@ -508,13 +509,13 @@ public class FlightBooking {
                 case NANJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300)) + 250) + (adults*(300 + (0.1*300) + (0.05*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300)) + 150) + (adults*(300 + (0.1*300) + (0.05*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300)) + 50) + (adults*(300 + (0.1*300) + (0.05*300) + 50))));
                     break;
                 }
                 break;
@@ -522,13 +523,13 @@ public class FlightBooking {
                 case OULU :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 250) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 150) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 50) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -536,13 +537,13 @@ public class FlightBooking {
                 case HELSINKI :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 250) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 150) + (adults*(300 + (0.1*300) + (0.15*300) + 150))) );
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300)) + 50) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -554,13 +555,13 @@ public class FlightBooking {
                 case BEIJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 250)) + (adults*(300 + (0.1*300) + (0.05*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 150)) + (adults*(300 + (0.1*300) + (0.05*300) + 250))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 50)) + (adults*(300 + (0.1*300) + (0.05*300) + 50))));
                     break;
                 }
                 break;
@@ -568,13 +569,13 @@ public class FlightBooking {
                 case OULU :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -582,13 +583,13 @@ public class FlightBooking {
                 case HELSINKI :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300+ (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300+ (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -600,13 +601,13 @@ public class FlightBooking {
                 case HELSINKI :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 250)) + (adults*(300 + (0.1*300) + (0.05*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 150)) + (adults*(300 + (0.1*300) + (0.05*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 50)) + (adults*(300 + (0.1*300) + (0.05*300) + 50))));
                     break;
                 }
                 break;
@@ -614,13 +615,13 @@ public class FlightBooking {
                 case BEIJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -628,13 +629,13 @@ public class FlightBooking {
                 case NANJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -646,13 +647,13 @@ public class FlightBooking {
                 case OULU :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 250)) + (adults*(300 + (0.1*300) + (0.05*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 150)) + (adults*(300 + (0.1*300) + (0.05*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300))) + (adults*(300 + (0.1*300) + (0.05*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.05*300) + 50)) + (adults*(300 + (0.1*300) + (0.05*300) + 50))));
                     break;
                 }
                 break;
@@ -660,13 +661,13 @@ public class FlightBooking {
                 case BEIJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -674,13 +675,13 @@ public class FlightBooking {
                 case NANJING :
                 switch(bookingClass){
                     case FIRST :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 250);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 250)) + (adults*(300 + (0.1*300) + (0.15*300) + 250))));
                     break;
                     case BUSINESS :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 150);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 150)) + (adults*(300 + (0.1*300) + (0.15*300) + 150))));
                     break;
                     case ENCONOMIC :
-                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300))) + (adults*(300 + (0.1*300) + (0.15*300)))) + 50);
+                    this.departingTicketPrice = (((child *(300 + (0.1*300) + (0.15*300) + 50)) + (adults*(300 + (0.1*300) + (0.15*300) + 50))));
                     break;
                 }
                 break;
@@ -730,15 +731,42 @@ public class FlightBooking {
         return returnDate;
     }
 
-    public String toString(){
-        return "Dear " + passengerFullName + ". Thank you for booking your flight with " + 
-        flightCompany + ". Following are the details of your booking and the trip:" + "\n" + 
-        "Ticket Number: " + ticketNumber + "\n" + 
-        "From " + tripSource + " to " + tripDestination + "\n" +
-        "Date of departure: " + departureDate + "\n" +
-        "Date of return: " + returnDate + "\n" +
-        "Total passengers: " + totalPassengers + "\n" +
-        "Total ticket price in Euros: " + totalTicketPrice;
+    public void displayTripDetials(){
+        long betweenDays = ChronoUnit.DAYS.between(departureDate, returnDate);
+        String tripDetails;
+        for(int i  = 0; i < size; ++i){
+        if(betweenDays < 2){
+            tripDetails = "Thank you for booking your flights with" + flightCompany + "\n" + 
+            "You reserved a total of " + size +" tickets" + "\n" + 
+            "Here are the trip details for Passenger No." + i +
+            "Passenger's Ticket Number:" + ticketNumber + "\n" + 
+            "Passenger's Full Name:" + passengerFullName + "\n" +
+            "Passenger's Age:" + passengerAge + "\n" + 
+            "Passenger's Gender:" + passengerGender + "\n" + 
+            "From:" + tripSource + "(" + sourceAirport + ")" + "\n" + 
+            "To:" + tripDestination + "(" + destinationAirport + ")" + "\n" + 
+            "The flight departs on:" + departureDate + "\n" + 
+            "And the return flight is on:" + returnDate + "(Changed from old " + returnDate + " to " + returnDate + "\n" + 
+            "The total ticket price is:" + totalTicketPrice + "\n" + 
+            "IMPORTANT NOTICE: As per our policy, the return date was changed because it was less than two days apart from your departure date";
+            System.out.println(tripDetails);
+        }
+        else{
+            tripDetails = "Thank you for booking your flights with" + flightCompany + "\n" + 
+            "You reserved a total of " + size +" tickets" + "\n" + 
+            "Here are the trip details for Passenger No." + i +
+            "Passenger's Ticket Number:" + ticketNumber + "\n" + 
+            "Passenger's Full Name:" + passengerFullName + "\n" +
+            "Passenger's Age:" + passengerAge + "\n" + 
+            "Passenger's Gender:" + passengerGender + "\n" + 
+            "From:" + tripSource + "(" + sourceAirport + ")" + "\n" + 
+            "To:" + tripDestination + "(" + destinationAirport + ")" + "\n" + 
+            "The flight departs on:" + departureDate + "\n" + 
+            "And the return flight is on:" + returnDate + "\n" + 
+            "The total ticket price is:" + totalTicketPrice + "\n";
+            System.out.println(tripDetails);
+        }
+    }
     }
 
     public void setBookingClass(String bookingClass){
